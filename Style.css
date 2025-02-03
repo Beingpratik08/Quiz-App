@@ -1,127 +1,3 @@
-/* body{
-    background-color: #131313;
-    color: aliceblue ;
-}
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header{
-    background-color: #053223;
-    width: 500px;
-    height: 100px;
-    padding: 0 10px 5px 10px;
-    border-radius: 5px;
-}
-
-h1{
-    font-size: xx-large;
-    text-align: center;
-    
-}
-.questionScore{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.question{
-    border-radius: 5px;
-    width: 500px;
-    background-color: aliceblue;
-    color: #131313;
-    padding: 10px;
-    margin-top: 20px;
-    display: none;
-
-}
-
-#result{
-
-    border-radius: 5px;
-    height: 300px;
-    width: 500px;
-    background-color: aliceblue;
-    color: #098a1c;
-    padding: 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    display: none;
-}
-
-
-.score-summary, .play-again{
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#feedback{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-li{
-    max-width: 90%;
-    list-style-type: none;
-    height: 20px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius:5px;
-    box-shadow: 0 1px 12px 0 rgba(29, 29, 29, .1);   
-}
-
-li:hover{
-    box-shadow: 0 5px 1px 0 rgba(21, 19, 19, 0.1); 
-}
-
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-button{
-    font-size: 20px;
-    background-color: #053223;
-    color: white;
-    padding: 5px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#restart{
-    margin-top: 2rem;
-    padding: 10px 20px;
-
-}
-
-#finish, #restart, #next, #exit{
-    display: none;
-}
-
-#exit-game{
-    margin-top: 2rem;
-    padding: 10px 15px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    display: none;;
-} */
-
 
 /* Base Styles for Desktop */
 body {
@@ -150,6 +26,10 @@ body {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+}
+
+#current-question{
+    display: none;
 }
 
 .questionScore {

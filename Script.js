@@ -99,6 +99,9 @@ startBtn.addEventListener('click', (event) => {
     updateQuestionNumber();
     showQuestion(questionIndex);
 
+    // display the current question
+    currentQuestion.style.display ="block"
+
     // Hide the "Finish" button and show the "Next" button
     finishBtn.style.display = 'none';
     nextBtn.style.display = 'flex';
