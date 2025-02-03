@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: #131313;
     color: aliceblue ;
 }
@@ -32,7 +32,6 @@ h1{
     border-radius: 5px;
     width: 500px;
     background-color: aliceblue;
-    /* background-color: #b70303; */
     color: #131313;
     padding: 10px;
     margin-top: 20px;
@@ -60,7 +59,6 @@ h1{
 .score-summary, .play-again{
     font-size: 24px;
     font-weight: bold;
-    /* margin-top: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,4 +120,255 @@ button{
     cursor: pointer;
     border-radius: 5px;
     display: none;;
+} */
+
+
+/* Base Styles for Desktop */
+body {
+    background-color: #131313;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quizWrapper {
+    width: 100%;
+    max-width: 600px;  /* Limit width on large screens */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #053223;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.questionScore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.question {
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: #131313;
+    padding: 15px;
+    margin-top: 20px;
+    display: none;
+}
+
+#result {
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: #098a1c;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+li {
+    max-width: 90%;
+    list-style-type: none;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 12px 0 rgba(29, 29, 29, .1);
+}
+
+li:hover {
+    box-shadow: 0 5px 1px 0 rgba(21, 19, 19, 0.1);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+button {
+    font-size: 20px;
+    background-color: #053223;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart {
+    margin-top: 2rem;
+    padding: 10px 20px;
+}
+
+/* Default Hidden Buttons */
+#finish, #restart, #next, #exit {
+    display: none;
+}
+
+/* Media Query for Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .quizWrapper {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .questionScore {
+        font-size: 22px;
+    }
+
+    .btn button {
+        font-size: 24px;
+        padding: 12px 25px;
+    }
+}
+
+/* Media Query for Tablets (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .quizWrapper {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .questionScore {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .btn button {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query for Small Tablets and Large Phones (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .quizWrapper {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .questionScore {
+        font-size: 18px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .btn button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    li {
+        height: 35px;
+        padding: 8px;
+    }
+}
+
+/* Media Query for Small Phones (320px to 479px) */
+@media (max-width: 479px) {
+    body {
+        padding: 10px;
+    }
+
+    .quizWrapper {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .questionScore {
+        font-size: 16px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    .btn button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    li {
+        height: 30px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    #finish, #restart, #next, #exit {
+        padding: 10px;
+    }
+}
+
+/* Full-Screen Phones (Portrait Mode under 320px) */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+
+    .quizWrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .questionScore {
+        font-size: 14px;
+    }
+
+    .question {
+        font-size: 12px;
+    }
+
+    .btn button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    li {
+        font-size: 12px;
+        height: 30px;
+        padding: 5px;
+    }
 }
