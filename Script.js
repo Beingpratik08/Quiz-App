@@ -29,7 +29,7 @@ for(item of options){
         console.log(flag);
 
         // Check if the selected option is the correct answer based on question index
-        if((questionIndex == 1 && event.target.innerText == "London") ||
+        if((questionIndex == 1 && event.target.innerText == "Paris") ||
            (questionIndex == 2 && event.target.innerText == "Jupiter") ||
            (questionIndex == 3 && event.target.innerText == "William Shakespeare") ||
            (questionIndex == 4 && event.target.innerText == "H2O") ||
@@ -66,7 +66,7 @@ for(item of options){
                 }
 
                 // Highlight the correct option in green when the answer is incorrect
-                if((questionIndex == 1 && options[i].innerText == "London" && flag == 2) ||
+                if((questionIndex == 1 && options[i].innerText == "Paris" && flag == 2) ||
                    (questionIndex == 2 && options[i].innerText == "Jupiter" && flag == 2) ||
                    (questionIndex == 3 && options[i].innerText == "William Shakespeare" && flag == 2) ||
                    (questionIndex == 4 && options[i].innerText == "H2O" && flag == 2) ||
