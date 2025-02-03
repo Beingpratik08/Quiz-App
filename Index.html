@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="quizWrapper">
+            <header class="header">
+                <h1>Quiz App</h1>
+                <div class="questionScore">
+                    <span id="current-question"></span>
+                    <!-- <span id="score"></span> -->
+                </div>
+            </header>
+
+            <main id="question-container">
+
+                <div id="rule">
+                    <h2>Rules and Instructions</h2>
+                    <ul>
+                        <li>There are 10 questions in total.</li>
+                        <li>You have 15 seconds to answer each question.</li>
+                        <li>Your score will be calculated based on the number of correct answers.</li>
+                        <li>You can only answer one question at a time.</li>
+                        <li>After answering the last question, click 'Finish' to see your final score.</li>
+                    </ul>
+                    <button id="start-quiz">Start Quiz</button> 
+                        <!-- <div id="timer">00:15</div> 
+                        <div id="timer-bar">
+                            <div id="timer-progress"></div>
+                        </div> 
+                        <div id="question-number">Question 1 of 10</div> -->
+                </div>
+
+
+
+                <div class="question">
+                    <h2> 1. What is the capital of France?</h2>
+                    <ul class="answers">
+                        <li class="option">Madrid</li>
+                        <li class="option">Paris</li>
+                        <li class="option">Berlin</li>
+                        <li class="option">London</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <h2> 2. What is the largest planet in our Solar System?
+                    </h2>
+                    <ul class="answers">
+                        <li class="option">Earth</li>
+                        <li class="option">Mars</li>
+                        <li class="option">Jupiter</li>
+                        <li class="option">Saturn</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 3. Who wrote the play 'Romeo and Juliet'?</h2>
+                    <ul class="answers">
+                        <li class="option">Charles Dickens</li>
+                        <li class="option">William Shakespeare</li>
+                        <li class="option">Jane Austen</li>
+                        <li class="option">Mark Twain</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 4. What is the chemical symbol for water?</h2>
+                    <ul class="answers">
+                        <li class="option">H2O</li>
+                        <li class="option">CO2</li>
+                        <li class="option">O2</li>
+                        <li class="option">NaCl</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 5. What is the chemical symbol for salt?</h2>
+                    <ul class="answers">
+                        <li class="option">H2O</li>
+                        <li class="option">CO2</li>
+                        <li class="option">O2</li>
+                        <li class="option">NaCl</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 6.  What is the tallest mountain in the world?
+                    </h2>
+                    <ul class="answers">
+                        <li class="option">K2</li>
+                        <li class="option">Mount Everest</li>
+                        <li class="option">Kangchenjunga</li>
+                        <li class="option">Kilimanjaro</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 7. Which element has the atomic number 1?</h2>
+                    <ul class="answers">
+                        <li class="option">Oxygen</li>
+                        <li class="option">Hydrogen</li>
+                        <li class="option">Helium</li>
+                        <li class="option">Nitrogen</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 8. What is the capital of Japan?</h2>
+                    <ul class="answers">
+                        <li class="option">Seoul</li>
+                        <li class="option">Beijing</li>
+                        <li class="option">Tokyo</li>
+                        <li class="option">Singapore</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 9. What is the square root of 64?</h2>
+                    <ul class="answers">
+                        <li class="option">6</li>
+                        <li class="option">7</li>
+                        <li class="option">8</li>
+                        <li class="option">9</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h2> 10. Who painted the Mona Lisa?</h2>
+                    <ul class="answers">
+                        <li class="option">Pablo Picasso</li>
+                        <li class="option">Vincent van Gogh</li>
+                        <li class="option">Leonardo da Vinci</li>
+                        <li class="option">Claude Monet</li>
+                    </ul>
+                </div>
+
+            </main>
+
+            <div id="result">
+                <h1> RESULT !!!</h1>
+                <div class="score-summary">
+                    <span id="score-result"> Your Score: 70%</span>
+                    <span id="pass-fail">Passed!!!</span>
+                </div>
+                <div class="play-again">
+                    <span id="feedback"> CONS</span>
+                    <button id="restart">Restart Quiz</button>
+                </div>
+            </div>
+
+            <!-- <div id="exit-game">
+                To exit the Quiz game you can click the cross icon on the right top of the tab.
+            </div> -->
+
+            
+            
+            <div class="btn">
+                <button id="next">Next</button>
+                <button id="finish">Finish</button> 
+                <button id="exit">Exit Quiz</button> 
+
+            </div>
+        </div>
+    </section>
+
+    <script src="Script.js"></script>
+</body>
+</html>
